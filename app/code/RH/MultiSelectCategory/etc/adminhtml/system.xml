@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Created By : Rohan Hapani
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="rh" translate="label" sortOrder="410">
+            <label>RH Multi Select Category</label>
+        </tab>
+        <section id="guestwishlist" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Category Multi Select</label>
+            <tab>rh</tab>
+            <resource>RH_MultiSelectCategory::guestwishlist_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Category Configuration</label>
+                <field id="meta_data_filter" translate="label" type="multiselect" showInDefault="1" showInWebsite="1" showInStore="1" sortOrder="10">
+                    <label>Category Multi Select Dropdown</label>
+                    <source_model>RH\MultiSelectCategory\Model\Source\Attribute</source_model>
+                    <frontend_model>RH\MultiSelectCategory\Block\Adminhtml\MultiUiSelect</frontend_model>
+                    <can_be_empty>1</can_be_empty>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

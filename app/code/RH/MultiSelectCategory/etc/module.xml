@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Created By : Rohan Hapani
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/Module/etc/module.xsd">
+    <module name="RH_MultiSelectCategory" schema_version="0.0.1" setup_version="0.0.1">
+    </module>
+</config>
